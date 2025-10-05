@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Gradient Generator</title>
+    <style>
+        body { font-family: Arial, sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; background-color: #f4f4f9; }
+        .container { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); text-align: center; max-width: 600px; }
+        .input-group { margin-bottom: 20px; display: flex; justify-content: center; align-items: center; gap: 20px; }
+        #gradient-box { width: 100%; height: 150px; border: 2px solid #ccc; border-radius: 8px; margin-bottom: 20px; }
+        textarea { width: 90%; height: 80px; padding: 10px; border: 1px solid #ddd; border-radius: 4px; resize: none; font-family: monospace; }
+        label { font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>✨ CSS Gradient Generator</h1>
+        <p>Pick two colors to create your custom linear gradient!</p>
+
+        <div class="input-group">
+            <label for="color1">Start Color:</label>
+            <input type="color" id="color1" value="#89f7fe">
+            
+            <label for="color2">End Color:</label>
+            <input type="color" id="color2" value="#66a6ff">
+        </div>
+
+        <div id="gradient-box"></div>
+
+        <h2>Generated CSS Code</h2>
+        <textarea id="css-output" readonly></textarea>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
